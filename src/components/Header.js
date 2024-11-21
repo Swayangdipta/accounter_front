@@ -722,7 +722,7 @@ const Header = ({path,menuAction,currentRoute,createdCategorySet,
       >
 
         <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', height: '100%'}}>
-          <Link to='/' ><h1 style={{color: '#FCF596'}}>Micron Brain Tech</h1></Link>
+          <Link to='/' ><h1 style={{color: '#FCF596',fontSize: '16px', display: 'block', whiteSpace: 'nowrap'}}>Micron Brain</h1></Link>
 
           <div className=''>
                       <BottomNavigation
