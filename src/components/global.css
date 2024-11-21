@@ -1,0 +1,163 @@
+.module-text span{
+    font-style: italic !important;
+    font-weight: bold !important;
+    color: #8bc500;
+}
+
+.soft-title{
+  text-align: left;
+  color: #1D1D1D;
+  font-size: 24px;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  margin-bottom: -65px;
+  border-radius: 8px;
+  width: 65%;
+  text-decoration: underline dotted;
+  }
+  
+  .dashboard-icon{
+    text-align: center !important;
+    font-size: 60px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center;
+  }
+
+  .box-container{
+          display: flex;
+  }
+
+
+.logo_upload_label_style {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.customOverlay {
+  background: rgba(71, 160, 36, 0.7);
+}
+.customModal {
+  background: #b2dbbf;
+  max-width: 500px;
+  width: 100%;
+}
+
+
+.react-responsive-modal-closeButton{
+top: 0px !important;
+right: 1px !important;
+background-color: #95f3ff !important;
+}
+
+.modules-box{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.module-box{
+  width: 23%;
+  margin: 1%;
+  text-align: center;
+  align-items: center;
+  height: 180px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #d6d6d6, #ffffff);
+  transition: ease-in-out 0.3s;
+  box-shadow: 20px 20px 60px #cacaca,
+  -20px -20px 60px #ffffff;
+}
+
+.soft-title-with-mobile{
+  font-weight: bold;
+  font-family: cursive;
+  overflow: hidden;
+  margin-top: 66px;
+  margin-left: 8PX;
+  color: green;
+  /* color: #fff; */
+  margin-bottom: -90px;
+  /* display: none; */
+  font-size: 14px;
+  text-align: center;
+  padding: 5px;
+  font-style: italic;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.module-box:hover{
+  transition: ease-in-out 0.3s;
+  filter: hue-rotate(160deg);
+  box-shadow:  none;
+}
+
+@media screen and (max-width: 900px) {
+
+  .soft-title-with-mobile{
+    display: block;
+    border-radius: 15px;
+  }
+
+  .jss21{
+    display: none  !important;
+  }
+
+
+ 
+  .module-box{
+    width: 100%;
+    
+  }
+  .MuiDrawer-paperAnchorLeft{
+    display: none  !important;
+  }
+  .makeStyles-appBarShift-10{
+    width:calc(100% - 0px) !important;
+  }
+  .jss10{
+    width:calc(100% - 0px) !important;
+  }
+
+  .app-gap {
+  width: 0px  !important;
+  }
+
+  .makeStyles-whiteSpace-21{
+    display: none;
+  }
+  .MuiBottomNavigationAction-label{
+    display: none  !important;
+  }
+  .MuiBottomNavigationAction-root{
+    min-width: 36px  !important;
+    padding: 6px 0px 8px !important;
+  }
+
+  .MuiBottomNavigationAction-root :first-child{
+    margin-left: -15px !important;
+  }
+  .soft-title{
+    border: 1px solid #23b7a7;
+    font-size: 32px;
+    width: 100%;
+    margin-left: 4px;
+  }
+ 
+  main{
+    margin-left: -19px !important;
+  }
+ 
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .module-box{
+    width: 100%;
+    
+  }
+}
