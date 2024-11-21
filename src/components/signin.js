@@ -24,7 +24,7 @@ import swal from 'sweetalert';
 import axios from 'axios'
 import {API_URL,APP_URL,APP_CHECKER,APP_ID} from '../config.js'
 import socketIOClient from "socket.io-client";
-
+import logo from '../../public/favicon.png'
 
 
 function Copyright() {
@@ -202,7 +202,7 @@ const SignIn = ()=> {
               }}>
                 
 
-                <img alt="Logo Loading..." src={`${API_URL}/${institution!= null ? institution.pro_logo:''}`} style={{width: '100%',
+                <img alt="Logo Loading..." src={logo} style={{width: '100%',
     height: '95px',
     borderRadius: '10px'
 }} />
