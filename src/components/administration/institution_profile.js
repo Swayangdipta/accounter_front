@@ -37,7 +37,7 @@ import Box from '@material-ui/core/Box';
 import '../../components/global.css'
 
 import {currentRouteSet} from '../../actions/actions';
-
+import logo from '../../favicon.png'
 
 
 function CircularProgressWithLabel(props) {
@@ -174,7 +174,7 @@ const InstitutionProfile = ({location,currentRouteSet,currentRoute,authInfo})=>{
           </Grid>
           <Grid item xs={12} sm={6}>
           <CircularProgressWithLabel value={progress} />
-<img style={{width:' 100%',height: '90px',marginTop: '17px'}} id="target" alt="No Photo / Loading" src={logoPath} />
+<img style={{width:' 100%',height: '90px',marginTop: '17px'}} id="target" alt="No Photo / Loading" src={logo} />
 </Grid>
 
 
