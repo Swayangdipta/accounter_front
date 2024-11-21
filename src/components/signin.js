@@ -24,7 +24,7 @@ import swal from 'sweetalert';
 import axios from 'axios'
 import {API_URL,APP_URL,APP_CHECKER,APP_ID} from '../config.js'
 import socketIOClient from "socket.io-client";
-import logo from '../../public/favicon.png'
+import logo from '../favicon.png'
 
 
 function Copyright() {
