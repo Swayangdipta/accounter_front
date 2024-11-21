@@ -724,50 +724,10 @@ const Header = ({path,menuAction,currentRoute,createdCategorySet,
         <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', height: '100%'}}>
           <Link to='/' ><h1 style={{color: '#FCF596'}}>Micron Brain Tech</h1></Link>
 
-            <Toolbar>
-                
-            <div className={classes.root,classes.usersettingaction} aria-controls="fade-menu" aria-haspopup="true" onClick={handleClick}>
-            <Avatar>{ authInfo.userInfo.user_full_name.substring(0,1)  } </Avatar>
-          </div> 
-            <IconButton style={{display:'none'}} aria-label="show 17 new notifications" color="inherit">
-                  <Badge badgeContent={17} color="secondary">
-                    <NotificationsIcon />
-                  </Badge>
-          </IconButton>
-              <IconButton
-                color="#ffffff"
-                aria-label="open drawer"
-                onClick={e => setIsMenuOpen(!isMenuOpen)}
-                edge="start"
-                className={clsx(classes.menuButton, {
-            
-                })}
-                style={{color: "#FCF596", height: '40px !important',fontSize: '40px'}}
-              >
-                <MenuIcon />
-              </IconButton>
-
-
-          <Menu
-            id="fade-menu"
-            anchorEl={anchorEl}
-            keepMounted
-            open={openusersetting}
-            onClose={handleClose}
-            TransitionComponent={Fade}
-          >
-            {/* <MenuItem onClick={handleClose}>Profile</MenuItem>
-            <MenuItem onClick={handleClose}>My account</MenuItem> */}
-            <MenuItem onClick={logout}>Logout</MenuItem>
-          </Menu>
-
-
-          {
-            isMenuOpen && (
-              <div className='w-[200px] h-full fixed top-[70px] right-0 bg-black z-[20000]'>
+          <div className=''>
                       <BottomNavigation
             value={value}
-            className={classes.Mui, classes.cus_botNav}
+            className={classes.Mui}
             onChange={(event, newValue) => {
               setValue(newValue);
             }}
@@ -804,9 +764,32 @@ const Header = ({path,menuAction,currentRoute,createdCategorySet,
 
 
           </BottomNavigation> 
-              </div>
-            )
-          }
+        </div>
+            <Toolbar>
+            <div className={classes.root,classes.usersettingaction} aria-controls="fade-menu" aria-haspopup="true" onClick={handleClick}>
+            <Avatar>{ authInfo.userInfo.user_full_name.substring(0,1)  } </Avatar>
+          </div> 
+            <IconButton style={{display:'none'}} aria-label="show 17 new notifications" color="inherit">
+                  <Badge badgeContent={17} color="secondary">
+                    <NotificationsIcon />
+                  </Badge>
+          </IconButton>
+
+
+          <Menu
+            id="fade-menu"
+            anchorEl={anchorEl}
+            keepMounted
+            open={openusersetting}
+            onClose={handleClose}
+            TransitionComponent={Fade}
+          >
+            {/* <MenuItem onClick={handleClose}>Profile</MenuItem>
+            <MenuItem onClick={handleClose}>My account</MenuItem> */}
+            <MenuItem onClick={logout}>Logout</MenuItem>
+          </Menu>
+
+
             </Toolbar>           
         </div>
           
